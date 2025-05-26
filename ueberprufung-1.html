@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+    }
+
+    .navbar {
+      background: #3399ff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      background: #fff;
+      color: #3399ff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .navbar button:hover {
+      background: #e0e0e0;
+    }
+
+    .section {
+      display: none;
+      padding: 100px 50px 50px 50px;
+      min-height: 100vh;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .header {
+      font-size: 32px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .sub-header {
+      font-size: 16px;
+      color: #666;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .textbox {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .textbox img {
+      width: 40%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .textbox p {
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <button onclick="showSection('ueber')">ÜBER MICH</button>
+    <button onclick="showSection('faehigkeiten')">FÄHIGKEITEN</button>
+    <button onclick="showSection('portfolio')">PORTFOLIO</button>
+    <button onclick="showSection('kontakt')">KONTAKT</button>
+  </div>
+
+  <!-- ÜBER MICH -->
+  <div id="ueber" class="section active">
+    <div class="header">ÜBER MICH
+      <div class="sub-header">In diesem Kapitel erfährst du, wer ich bin und was mich antreibt. Ich teile meinen beruflichen Werdegang, meine persönlichen Stärken und die Erfahrungen, die mich geprägt haben. Ausserdem gebe ich einen Einblick in meine Vision und die Ziele, die ich verfolge.</div>
+    </div>
+        <div class="grid">
+            <div class="textbox">
+                <h3>Meine Person</h3>
+                <p>Ich bin 16 und mache eine Ausbildung zum Informatiker. In der Schweiz geboren sowie aufgewachsen, trotzdem bin ich stolz auf meine griechische und spanische Herkunft. Obwohl ich oft umgezogen bin, habe ich mich immer schnell eingelebt, wie auch neue Freunde gefunden. Sport wie Musik sind meine grossen Leidenschaften – sie inspirieren mich und bereichern meinen Alltag.</p>
+            </div>
+        <div class="textbox">
+            <h3>Mein Arbeitgeber</h3>
+            <p>Bühler AG ist eine Firma mit international gutem Ruf, die für neue Technologien sowie Lösungen bekannt ist, die auf die Kunden zugeschnitten sind. Sie hat sich auf Verfahren zum Verarbeiten von Lebensmitteln, zur Bearbeitung von Materialien und für Automatisierung in der Industrie spezialisiert. Mit Forschung sowie Entwicklung schafft Bühler zukunftsfähige sowie umweltschonende Lösungen, die die Produktion verbessern. Zum Erfolg tragen die hohen Qualitätsanforderungen bei, sowie der Fokus darauf, sparsam mit Rohstoffen umzugehen. Als Folge der Innovationskraft, der Qualität sowie der Ausrichtung auf die Kunden ist Bühler ein guter Partner – ebenso ein guter Arbeitgeber weltweit.</p>
+        </div>
+        <div class="textbox">
+            <h3>Familie</h3>
+            <p>Ich habe einen kleinen Bruder, der 14 Jahre alt ist, und eine kleine Schwester, die 11 Jahre alt ist. Beide gehen noch zur Schule – mein Bruder ist in der 2. Oberstufe und befindet sich gerade auf dem Weg zur Berufsfindung, während meine kleine Schwester noch in der 5. Klasse ist. Meine Mutter ist selbstständig und betreibt ein Massagestudio, ausserdem ist sie Hausfrau. Mein Vater arbeitet als Teammanager im SAP-Team bei der Firma Tecan.</p>
+            <img src="bilder/Mami.png" alt="Mami" width="400">
+        </div>
+        <div class="textbox">
+            <h3>Mein Beruf</h3>
+            <p>Die Lehre als Informatiker in der Schweiz dauert vier Jahre und bietet eine fundierte Ausbildung in der IT-Branche. Während der Ausbildung können sich Lernende auf verschiedene Fachrichtungen spezialisieren, darunter Applikationsentwicklung, Plattformentwicklung, Systemtechnik oder Business-IT. In der Applikationsentwicklung liegt der Fokus auf der Programmierung und Entwicklung von Softwarelösungen, während sich die Plattformentwicklung mit IT-Infrastrukturen und Netzwerken befasst. Die Systemtechnik vermittelt Wissen über Hard- und Softwarekonfigurationen sowie deren Wartung, und in der Business-IT stehen IT-Prozesse und Geschäftsabläufe im Mittelpunkt. Durch praxisnahe Arbeit in Unternehmen und begleitenden Unterricht an der Berufsfachschule erwerben die Lernenden sowohl technisches als auch analytisches Know-how, das sie optimal auf die IT-Welt vorbereitet.</p>
+        </div>
+        <div class="textbox">
+            <h3>Meine Hobbys/Freizeit Aktivitäten</h3>
+            <p>In meiner Freizeit spielt Sport eine grosse Rolle für mich. Ich bin aktiv im Fussballverein SC Aadorf, wo ich regelmässig trainiere und mit meinem Team an Meisterschaften teilnehme. Fussball gibt mir nicht nur die Möglichkeit, mich körperlich auszupowern, sondern auch Teamgeist und Durchhaltevermögen zu stärken. Neben dem Sport ist Musik eine meiner grossen Leidenschaften. Ich geniesse es, kreativ zu sein, neue Klänge auszuprobieren und mich musikalisch auszudrücken – sei es durch das Spielen eines Instruments oder das Produzieren eigener Songs.</p>
+        </div>
+        </div>
+  </div>
+
+  <!-- FÄHIGKEITEN -->
+  <div id="faehigkeiten" class="section">
+    <div class="header">FÄHIGKEITEN
+      <div class="sub-header">Jeder Mensch hat individuelle Fähigkeiten, die ihn auszeichnen und im Alltag sowie im Beruf weiterbringen. In diesem Abschnitt stelle ich meine persönlichen Stärken und Entwicklungspotenziale vor.</div>
+    </div>
+    <div class="grid">
+      <div class="textbox">
+        <h3>Meine Persönlichen Fähigkeiten</h3>
+        <p>Ich bin eine zuverlässige und teamfähige Person, die gerne mit anderen zusammenarbeitet. Durch meine Lernbereitschaft eigne ich mir schnell neues Wissen an und setze es kreativ ein. Meine Geduld hilft mir, Herausforderungen ruhig und lösungsorientiert anzugehen. Zudem verfüge ich über gute kommunikative Fähigkeiten, die mir in der Zusammenarbeit mit anderen zugutekommen. Spontanität und Zeitmanagement fallen mir manchmal schwer, da ich lieber im Voraus plane. Ausserdem kann ich gelegentlich stur oder redselig sein, doch ich arbeite ständig daran, mich weiterzuentwickeln.</p>
+      </div>
+      <div class="textbox">
+        <h3>Stärken</h3>
+        <p>Zuverlässig, Teamfähigkeit, Lernbereit, Kreativ, Geduld, Kommunikationsfähig</p>
+      </div>
+      <div class="textbox">
+        <h3>Schwächen</h3>
+        <p>Spontanität, Zeitmanagement, Sturheit, redselig</p>
+      </div>
+      <div class="textbox">
+        <h3>Meine Programmier Erfahrung</h3>
+        <p>Meine Programmiererfahrung ist im Prinzip gut. Die meisten Themen lerne ich direkt im Betrieb, wo ich praktische Aufgaben bearbeite und neue Technologien anwende. Ergänzend dazu vertiefe ich mein Wissen in der Schule, wo ich die theoretischen Grundlagen gelehrt bekomme. Durch diese Kombination aus Praxis und Theorie setzen sich die Informationen besonders gut fest, und ich kann mein Wissen besser erweitern.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO -->
+  <div id="portfolio" class="section">
+    <div class="header">PORTFOLIO
+      <div class="sub-header">In diesem Kapitel präsentiere ich meine bisherigen Projekte...</div>
+    </div>
+    <div class="grid">
+      <div class="textbox">
+        <h3>Von wo erhalte ich Projekte</h3>
+        <p>Meine ersten Projekte habe ich in der Oberstufe umgesetzt, darunter mein Abschlussprojekt – eine Nike-Box...</p>
+      </div>
+      <div class="textbox">
+        <h3>Welche Themen sind meist Projekte</h3>
+        <p>Projekte entstehen bei mir meist aus Übungsaufgaben, die mein Verständnis für verschiedene Programmierkonzepte vertiefen sollen...</p>
+      </div>
+      <div class="textbox">
+        <h3>Welche Projekte habe ich schon gemacht</h3>
+        <p>Ich habe schon einige Projekte hinter mir das neuste war das MVC Projekt, dieses ging sehr lange, aber half mir sehr bei der praktischen Prüfung...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- KONTAKT -->
+  <div id="kontakt" class="section">
+    <div class="header">KONTAKT
+      <div class="sub-header">So können Sie mich erreichen.</div>
+    </div>
+    <div class="grid">
+      <div class="textbox">
+        <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/62-instagram-512.png"/>
+        <p>Instagram: @alexis_ka_08</p>
+      </div>
+      <div class="textbox">
+        <img src="https://pngimg.com/d/phone_PNG48921.png" alt="Telefon Bild" />
+        <p>Telefon: +0874219873</p>
+      </div>
+      <div class="textbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png" alt="E-Mail Bild 1" />
+        <p>E-Mail: alexiskarapsias@gmail.com</p>
+      </div>
+      <div class="textbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png" alt="E-Mail Bild 2" />
+        <p>E-Mail (Arbeit): alexis.karapsias_fernandez@buhlergroup.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
